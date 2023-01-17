@@ -11,7 +11,7 @@
 <body class="bg-dark">
 
     <header class="bg-light">
-        <section class="row justify-content-between align-items-center container py-3 px-1 m-auto">
+        <section class="row justify-content-between align-items-center container py-1 px-1 m-auto">
             <a class="d-flex col-1" href="./index.html">
                 <img src="./Imágenes/Logo_recortado.png" style="width: 100px;">
             </a>
@@ -30,17 +30,17 @@
         </section>
     </header>
 
-    <nav class="bg-secondary p-2">
+    <nav class="bg-secondary p-2" style="position: sticky; top: 0%; z-index: 10;">
         <section class="container p-0">
             <ul class="list-inline pb-2 m-0">
-                <li class="list-inline-item"><a class="text-light" href="./index.html">Inicio</a></li>
-                <li class="list-inline-item"><p class="text-light m-0">></p></li>
-                <li class="list-inline-item"><a class="text-light" href="./listado.html">Freelancers</a></li>
+                <li class="list-inline-item"><a class="text-light h7" href="./index.html">Inicio</a></li>
+                <li class="list-inline-item"><p class="text-light m-0 h7">></p></li>
+                <li class="list-inline-item"><a class="text-light h7" href="./listado.html">Freelancers</a></li>
             </ul>
             <ul class="mb-0 list-inline align-items-center d-flex p-0">
                 <li class="list-inline-item col-9">
                     <form class="rounded p-0 col-9 form-group bg-light row">
-                        <div class="dropdown">
+                        <div class="dropdown col-2 p-0 m-0">
                             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                               Localización
                             </button>
@@ -50,10 +50,10 @@
                               <a class="dropdown-item" href="#">Something else here</a>
                             </div>
                         </div>
+                        <input class="col w-100 border-0 flex-grow m-0" type="text" placeholder="Ej: Java, Desarrollo Web, Madrid" style="background-color: none; outline: none;">
                         <button class="col-2 hover-zoom fa-2x btn btn-light" type="submit">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
-                        <input class="col w-100 border-0 flex-grow m-0" type="text" placeholder="Ej: Java, Desarrollo Web, Madrid" style="background-color: none; outline: none;">
                     </form>
                 </li>
                 <li class="list-inline-item"><p class="text-light m-0">o</p></li>
@@ -64,54 +64,547 @@
 
     <main class="bg-light pt-3">
         <section class="container m-auto p-0 row">
-            <section class="col-3 border-dark m-0 p-0">
+            <section id="filtros" class="col-2 border-dark m-0 p-0 border-end" style="min-width: 200px; overflow-y: scroll; position: sticky; top: 0%; z-index: 9; height: 100vh;">
                 <form class="m-0 p-0">
-                    <div class="form-check form-switch">
+
+                    <div class="form-check form-switch h7">
                         <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
                         <label class="form-check-label" for="flexSwitchCheckDefault">Verificado por Prograo</label>
                     </div>
 
-                    <label>Precio</label>
+                    <label class="h6 font-weight-bold m-0 p-0 mt-3">Precio por hora</label>
 
-                    <div class="form-check">
+                    <div class="form-check ms-2 mb-0">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label h7" for="flexCheckDefault">
                             0 - 15 €
                         </label>
                     </div>
 
-                    <div class="form-check">
+                    <div class="form-check ms-2 mb-0">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label h7" for="flexCheckDefault">
                             16 - 30 €
                         </label>
                     </div>
 
-                    <div class="form-check">
+                    <div class="form-check ms-2 mb-0">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label h7" for="flexCheckDefault">
                             31 - 50 €
                         </label>
                     </div>
 
-                    <div class="form-check">
+                    <div class="form-check ms-2 mb-0">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label h7" for="flexCheckDefault">
                             51 - 100 €
                         </label>
                     </div>
 
-                    <div class="form-check">
+                    <div class="form-check ms-2 mb-0">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
+                        <label class="form-check-label h7" for="flexCheckDefault">
                             + 100 €
                         </label>
                     </div>
+
+                    <div class="row align-items-center m-0 p-0 ms-2 mt-1">
+                        <input class="col-4 h-25 h7 py-1 me-1" type="text" placeholder="MIN">
+                        <input class="col-4 h-25 h7 py-1" type="text" placeholder="MAX">
+                        <button class="col-2 hover-zoom btn btn-light m-0 ms-1 p-0 border border-dark rounded" type="submit">
+                            <i class="h7 fa-solid fa-arrow-right m-0"></i>
+                        </button>
+                    </div>
+
+                    <label class="h6 font-weight-bold m-0 p-0 mt-3">Experiencia</label>
+
+                    <div class="form-check ms-2 mb-0">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h7" for="flexCheckDefault">
+                            0 - 10 proyectos
+                        </label>
+                    </div>
+
+                    <div class="form-check ms-2 mb-0">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h7" for="flexCheckDefault">
+                            11 - 25 proyectos
+                        </label>
+                    </div>
+
+                    <div class="form-check ms-2 mb-0">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h7" for="flexCheckDefault">
+                            26 - 50 proyectos
+                        </label>
+                    </div>
+
+                    <div class="form-check ms-2 mb-0">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h7" for="flexCheckDefault">
+                            51 - 100 proyectos
+                        </label>
+                    </div>
+
+                    <div class="form-check ms-2 mb-0">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h7" for="flexCheckDefault">
+                            + 100 proyectos
+                        </label>
+                    </div>
+
+                    <div class="row align-items-center m-0 p-0 ms-2 mt-1">
+                        <input class="col-4 h-25 h7 py-1 me-1" type="text" placeholder="MIN">
+                        <input class="col-4 h-25 h7 py-1" type="text" placeholder="MAX">
+                        <button class="col-2 hover-zoom btn btn-light m-0 ms-1 p-0 border border-dark rounded" type="submit">
+                            <i class="h7 fa-solid fa-arrow-right m-0"></i>
+                        </button>
+                    </div>
+
+                    <label class="h6 font-weight-bold m-0 p-0 mt-3">Idiomas</label>
+
+                    <div class="form-check ms-2 mb-0">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h7" for="flexCheckDefault">
+                            Español
+                        </label>
+                    </div>
+
+                    <div class="form-check ms-2 mb-0">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h7" for="flexCheckDefault">
+                            Inglés
+                        </label>
+                    </div>
+
+                    <div class="form-check ms-2 mb-0">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h7" for="flexCheckDefault">
+                            Catalán
+                        </label>
+                    </div>
+
+                    <div class="form-check ms-2 mb-0">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h7" for="flexCheckDefault">
+                            Francés
+                        </label>
+                    </div>
+
+                    <div class="form-check ms-2 mb-0">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h7" for="flexCheckDefault">
+                            Alemán
+                        </label>
+                    </div>
+
+                    <div class="form-check ms-2 mb-0">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h7" for="flexCheckDefault">
+                            Portugués
+                        </label>
+                    </div>
+
+                    <input class="btn text-primary" type="button" value="Más idiomas(18)">
+
+                    <label class="h6 font-weight-bold m-0 p-0 mt-3">Experiencia</label>
+
+                    <div class="form-check ms-2 mb-0">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h7" for="flexCheckDefault">
+                            0 - 10 proyectos
+                        </label>
+                    </div>
+
+                    <div class="form-check ms-2 mb-0">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h7" for="flexCheckDefault">
+                            11 - 25 proyectos
+                        </label>
+                    </div>
+
+                    <div class="form-check ms-2 mb-0">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h7" for="flexCheckDefault">
+                            26 - 50 proyectos
+                        </label>
+                    </div>
+
+                    <div class="form-check ms-2 mb-0">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h7" for="flexCheckDefault">
+                            51 - 100 proyectos
+                        </label>
+                    </div>
+
+                    <div class="form-check ms-2 mb-0">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h7" for="flexCheckDefault">
+                            + 100 proyectos
+                        </label>
+                    </div>
+
+                    <div class="row align-items-center m-0 p-0 ms-2 mt-1">
+                        <input class="col-4 h-25 h7 py-1 me-1" type="text" placeholder="MIN">
+                        <input class="col-4 h-25 h7 py-1" type="text" placeholder="MAX">
+                        <button class="col-2 hover-zoom btn btn-light m-0 ms-1 p-0 border border-dark rounded" type="submit">
+                            <i class="h7 fa-solid fa-arrow-right m-0"></i>
+                        </button>
+                    </div>
+
+                    <label class="h6 font-weight-bold m-0 p-0 mt-3">Críticas</label>
+
+                    <div class="form-check ms-2 mb-0">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h7" for="flexCheckDefault">
+                            0 - 10 comentarios
+                        </label>
+                    </div>
+
+                    <div class="form-check ms-2 mb-0">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h7" for="flexCheckDefault">
+                            11 - 25 comentarios
+                        </label>
+                    </div>
+
+                    <div class="form-check ms-2 mb-0">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label h7" for="flexCheckDefault">
+                            + 25 comentarios
+                        </label>
+                    </div>
+
+                    <div class="row align-items-center m-0 p-0 ms-2 mt-1">
+                        <input class="col-4 h-25 h7 py-1 me-1" type="text" placeholder="MIN">
+                        <input class="col-4 h-25 h7 py-1" type="text" placeholder="MAX">
+                        <button class="col-2 hover-zoom btn btn-light m-0 ms-1 p-0 border border-dark rounded" type="submit">
+                            <i class="h7 fa-solid fa-arrow-right m-0"></i>
+                        </button>
+                    </div>
+
+                    <div class="d-flex">
+                        <i class="fa-light fa-star"></i>
+                    </div>
+                    
                 </form>
             </section>
 
-            <section class="col">
+            <section class="col row">
                 <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="..." alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
@@ -173,7 +666,7 @@
         </div>
 
     </footer>
-
+       
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
