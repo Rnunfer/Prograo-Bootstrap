@@ -3,6 +3,10 @@
   font-size: 14px;
 }
 
+.h8 {
+  font-size: 12px;
+}
+
 #fondoGradiente {
   background: linear-gradient(-45deg, #FF7F40, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
