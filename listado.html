@@ -31,40 +31,33 @@
     </header>
 
     <nav class="bg-secondary p-2" style="position: sticky; top: 0%; z-index: 10;">
-        <section class="container p-0">
+        <section class="container-xxl px-3 p-xxl-0">
             <ul class="list-inline pb-2 m-0">
                 <li class="list-inline-item"><a class="text-light h7" href="./index.html">Inicio</a></li>
                 <li class="list-inline-item"><p class="text-light m-0 h7">></p></li>
                 <li class="list-inline-item"><a class="text-light h7" href="./listado.html">Freelancers</a></li>
             </ul>
-            <ul class="mb-0 list-inline align-items-center d-flex p-0">
-                <li class="list-inline-item col-9">
-                    <form class="rounded p-0 col-9 form-group bg-light row">
-                        <div class="dropdown col-2 p-0 m-0">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Localización
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">Action</a>
-                              <a class="dropdown-item" href="#">Another action</a>
-                              <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </div>
-                        <input class="col w-100 border-0 flex-grow m-0" type="text" placeholder="Ej: Java, Desarrollo Web, Madrid" style="background-color: none; outline: none;">
-                        <button class="col-2 hover-zoom fa-2x btn btn-light" type="submit">
+            <ul class="mb-0 list-inline align-items-center d-flex d-flex-row p-0">
+                <li class="list-inline-item col me-5">
+                    <form class="rounded p-0 form-group bg-light row">
+                        <input class="col w-100 border-0 flex-grow m-0 rounded" type="text" placeholder="Ej: Java, Desarrollo Web, Madrid" style="background-color: none; outline: none;">
+                        <button class="col-2 hover-zoom fa-2x btn btn-light m-0 p-0" type="submit">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
                     </form>
                 </li>
-                <li class="list-inline-item"><p class="text-light m-0">o</p></li>
-                <li class="list-inline-item col"><input class="btn btn-primary" type="button" value="Registrarse"></li>
+                <div class="list-inline-item">
+                    <p class="d-inline text-light m-0 h5 me-4">/</p>
+                    <input class="d-inline btn btn-primary" type="button" value="Crear un proyecto">
+                    <input class="d-inline btn btn-primary" type="button" value="Buscador rápido">
+                </div>
             </ul>
         </section>
     </nav>
 
     <main class="bg-light pt-3">
-        <section class="container m-auto p-0 row">
-            <section id="filtros" class="col-2 border-dark m-0 p-0 border-end" style="min-width: 200px; overflow-y: scroll; position: sticky; top: 0%; z-index: 9; height: 100vh;">
+        <section class="container-xxl m-auto py-0 px-3 p-xxl-0 row">
+            <section id="filtros" class="col-2 border-dark m-0 p-0" style="min-width: 200px; overflow-y: scroll; position: sticky; top: 0%; z-index: 9; height: 100vh;">
                 <form class="m-0 p-0">
 
                     <div class="form-check form-switch h7">
@@ -291,9 +284,9 @@
                 </form>
             </section>
 
-            <section class="col row ms-4">
+            <section class="col row ms-4 p-0 align-items-start">
 
-              <div class="card col-6 p-0 border-dark">
+              <div class="card col-12 col-lg-6 p-0 border-dark">
                 <div class="row no-gutters">
                     <div class="col-auto">
                         <img src="./Imágenes/Cara 1.jpg" class="img-fluid rounded-circle p-1 m-0" alt="" style="width: 150px;">
@@ -317,8 +310,259 @@
                         </div>
                     </div>
                 </div>
-                <div class="card-footer w-100 text-muted">
-                    Footer stating cats are CUTE little animals
+                <div class="card-footer w-100">
+                    <ul class="list-inline">
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Javascript</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">React.js</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Python</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Ruby</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Ruby on Rails</li>
+                    </ul>
+                </div>
+              </div>
+
+              <div class="card col-12 col-lg-6 p-0 border-dark">
+                <div class="row no-gutters">
+                    <div class="col-auto">
+                        <img src="./Imágenes/Cara 1.jpg" class="img-fluid rounded-circle p-1 m-0" alt="" style="width: 150px;">
+                    </div>
+                    <div class="col pt-2 ps-0">
+                        <div class="card-block">
+                            <p class="card-title h5 m-0">Maximiliano Pérez de los Campos</p>
+                            <em class="card-text h7 m-0 mt-1">Desarrollor frontend y diseñador gráfico</em>
+                            <div class="d-flex align-items-center mt-1">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <p class="h8 m-0 ms-2">de 34 críticas</p>
+                            </div>
+                            <div class="d-flex align-items-center mt-1">
+                                <img class="m-0 p-0" src="./Imágenes/espana.png" style="width: 20px;">
+                                <p class="h7 m-0 ms-2">Madrid, España</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer w-100">
+                    <ul class="list-inline">
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Javascript</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">React.js</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Python</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Ruby</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Ruby on Rails</li>
+                    </ul>
+                </div>
+              </div>
+
+              <div class="card col-12 col-lg-6 p-0 border-dark">
+                <div class="row no-gutters">
+                    <div class="col-auto">
+                        <img src="./Imágenes/Cara 1.jpg" class="img-fluid rounded-circle p-1 m-0" alt="" style="width: 150px;">
+                    </div>
+                    <div class="col pt-2 ps-0">
+                        <div class="card-block">
+                            <p class="card-title h5 m-0">Maximiliano Pérez de los Campos</p>
+                            <em class="card-text h7 m-0 mt-1">Desarrollor frontend y diseñador gráfico</em>
+                            <div class="d-flex align-items-center mt-1">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <p class="h8 m-0 ms-2">de 34 críticas</p>
+                            </div>
+                            <div class="d-flex align-items-center mt-1">
+                                <img class="m-0 p-0" src="./Imágenes/espana.png" style="width: 20px;">
+                                <p class="h7 m-0 ms-2">Madrid, España</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer w-100">
+                    <ul class="list-inline">
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Javascript</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">React.js</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Python</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Ruby</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Ruby on Rails</li>
+                    </ul>
+                </div>
+              </div>
+
+              <div class="card col-12 col-lg-6 p-0 border-dark">
+                <div class="row no-gutters">
+                    <div class="col-auto">
+                        <img src="./Imágenes/Cara 1.jpg" class="img-fluid rounded-circle p-1 m-0" alt="" style="width: 150px;">
+                    </div>
+                    <div class="col pt-2 ps-0">
+                        <div class="card-block">
+                            <p class="card-title h5 m-0">Maximiliano Pérez de los Campos</p>
+                            <em class="card-text h7 m-0 mt-1">Desarrollor frontend y diseñador gráfico</em>
+                            <div class="d-flex align-items-center mt-1">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <p class="h8 m-0 ms-2">de 34 críticas</p>
+                            </div>
+                            <div class="d-flex align-items-center mt-1">
+                                <img class="m-0 p-0" src="./Imágenes/espana.png" style="width: 20px;">
+                                <p class="h7 m-0 ms-2">Madrid, España</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer w-100">
+                    <ul class="list-inline">
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Javascript</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">React.js</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Python</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Ruby</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Ruby on Rails</li>
+                    </ul>
+                </div>
+              </div>
+
+              <div class="card col-12 col-lg-6 p-0 border-dark">
+                <div class="row no-gutters">
+                    <div class="col-auto">
+                        <img src="./Imágenes/Cara 1.jpg" class="img-fluid rounded-circle p-1 m-0" alt="" style="width: 150px;">
+                    </div>
+                    <div class="col pt-2 ps-0">
+                        <div class="card-block">
+                            <p class="card-title h5 m-0">Maximiliano Pérez de los Campos</p>
+                            <em class="card-text h7 m-0 mt-1">Desarrollor frontend y diseñador gráfico</em>
+                            <div class="d-flex align-items-center mt-1">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <p class="h8 m-0 ms-2">de 34 críticas</p>
+                            </div>
+                            <div class="d-flex align-items-center mt-1">
+                                <img class="m-0 p-0" src="./Imágenes/espana.png" style="width: 20px;">
+                                <p class="h7 m-0 ms-2">Madrid, España</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer w-100">
+                    <ul class="list-inline">
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Javascript</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">React.js</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Python</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Ruby</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Ruby on Rails</li>
+                    </ul>
+                </div>
+              </div>
+
+              <div class="card col-12 col-lg-6 p-0 border-dark">
+                <div class="row no-gutters">
+                    <div class="col-auto">
+                        <img src="./Imágenes/Cara 1.jpg" class="img-fluid rounded-circle p-1 m-0" alt="" style="width: 150px;">
+                    </div>
+                    <div class="col pt-2 ps-0">
+                        <div class="card-block">
+                            <p class="card-title h5 m-0">Maximiliano Pérez de los Campos</p>
+                            <em class="card-text h7 m-0 mt-1">Desarrollor frontend y diseñador gráfico</em>
+                            <div class="d-flex align-items-center mt-1">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <p class="h8 m-0 ms-2">de 34 críticas</p>
+                            </div>
+                            <div class="d-flex align-items-center mt-1">
+                                <img class="m-0 p-0" src="./Imágenes/espana.png" style="width: 20px;">
+                                <p class="h7 m-0 ms-2">Madrid, España</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer w-100">
+                    <ul class="list-inline">
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Javascript</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">React.js</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Python</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Ruby</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Ruby on Rails</li>
+                    </ul>
+                </div>
+              </div>
+
+              <div class="card col-12 col-lg-6 p-0 border-dark">
+                <div class="row no-gutters">
+                    <div class="col-auto">
+                        <img src="./Imágenes/Cara 1.jpg" class="img-fluid rounded-circle p-1 m-0" alt="" style="width: 150px;">
+                    </div>
+                    <div class="col pt-2 ps-0">
+                        <div class="card-block">
+                            <p class="card-title h5 m-0">Maximiliano Pérez de los Campos</p>
+                            <em class="card-text h7 m-0 mt-1">Desarrollor frontend y diseñador gráfico</em>
+                            <div class="d-flex align-items-center mt-1">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <p class="h8 m-0 ms-2">de 34 críticas</p>
+                            </div>
+                            <div class="d-flex align-items-center mt-1">
+                                <img class="m-0 p-0" src="./Imágenes/espana.png" style="width: 20px;">
+                                <p class="h7 m-0 ms-2">Madrid, España</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer w-100">
+                    <ul class="list-inline">
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Javascript</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">React.js</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Python</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Ruby</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Ruby on Rails</li>
+                    </ul>
+                </div>
+              </div>
+
+              <div class="card col-12 col-lg-6 p-0 border-dark">
+                <div class="row no-gutters">
+                    <div class="col-auto">
+                        <img src="./Imágenes/Cara 1.jpg" class="img-fluid rounded-circle p-1 m-0" alt="" style="width: 150px;">
+                    </div>
+                    <div class="col pt-2 ps-0">
+                        <div class="card-block">
+                            <p class="card-title h5 m-0">Maximiliano Pérez de los Campos</p>
+                            <em class="card-text h7 m-0 mt-1">Desarrollor frontend y diseñador gráfico</em>
+                            <div class="d-flex align-items-center mt-1">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
+                                <p class="h8 m-0 ms-2">de 34 críticas</p>
+                            </div>
+                            <div class="d-flex align-items-center mt-1">
+                                <img class="m-0 p-0" src="./Imágenes/espana.png" style="width: 20px;">
+                                <p class="h7 m-0 ms-2">Madrid, España</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer w-100">
+                    <ul class="list-inline">
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Javascript</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">React.js</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Python</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Ruby</li>
+                        <li class="list-inline-item bg-info rounded p-2 m-0">Ruby on Rails</li>
+                    </ul>
                 </div>
               </div>
 
@@ -344,6 +588,7 @@
         </div>
 
     </footer>
+    
     
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
