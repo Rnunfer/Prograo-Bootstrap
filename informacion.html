@@ -7,6 +7,7 @@
     <title>Prograo</title>
     <link rel="stylesheet" href="./css/styles.css">
     <script src="https://kit.fontawesome.com/1bb080c6ae.js" crossorigin="anonymous"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather" />
 </head>
 <body>
@@ -42,7 +43,7 @@
 
         <div class="informacionFreelancer mt-5">
             <div class="tituloInformacionFreelancer">DESCRIPCIÓN</div>
-            <div class="cuerpoInformacionFreelancer border-0 p-0">Me dedico a crear páginas web a empresas y particulares, manejándome en distintos lenguajes y frameworks para adaptarme al cliente. Además, soy capaz de manejarme en programas de diseño gráfico.</div>
+            <div class="cuerpoInformacionFreelancer border-0 p-0 bg-light">Me dedico a crear páginas web a empresas y particulares, manejándome en distintos lenguajes y frameworks para adaptarme al cliente. Además, soy capaz de manejarme en programas de diseño gráfico.</div>
         </div>
 
         <div class="row mt-5">
@@ -160,7 +161,7 @@
                                 <div class="row align-items-start">
                                     <img class="img-fluid" src="./Imágenes/edificio-de-oficinas.png" style="width: 80px;">
                                     <div class="col ps-0">
-                                        <em class="fw-bold">Alparcaria SL</em>
+                                        <em class="fw-bold">Receta Fácil</em>
                                         <div class="d-flex align-items-center">
                                             <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
                                             <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
@@ -168,7 +169,25 @@
                                             <img class="m-0 p-0" src="./Imágenes/estrella_rellena.png" style="width: 15px;">
                                             <div class="ps-2 h6 m-0" style="color: gray;">29/9/2022</div>
                                         </div>
-                                        <div class="h6 m-0 mt-2">Renovación de la página web d enuestra empresa. Entrega rápida y muy profesional.</div>
+                                        <div class="h6 m-0 mt-2">Renovación de la página web de nuestra empresa. Entrega rápida y muy profesional.</div>
+                                        <div class="h7" style="color: gray;">Imágenes:</div>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#modalImagen">
+                                            <img class="col-6 img-fluid mt-3" src="./Imágenes/paginaWeb.png">
+                                        </a>
+
+                                        <div class="modal" id="modalImagen">
+                                            <div class="modal-dialog modal-xl">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h5 class="modal-title">Imagen en grande</h5>
+                                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  <img src="./Imágenes/paginaWeb.png" class="img-fluid">
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>                               
                                     </div>
                                 </div>
 
@@ -231,12 +250,69 @@
                 </div>
 
                 <div class="informacionFreelancer mt-5">
-                    <div class="tituloInformacionFreelancer">TIPO DE PROYECTO</div>
-                    <div class="cuerpoInformacionFreelancer"></div>
+                    <div class="tituloInformacionFreelancer">PREFERENCIAS</div>
+                    <div class="cuerpoInformacionFreelancer">
+                        <div class="fw-bold">Idiomas</div>
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex align-items-center mt-1">
+                                <img src="./Imágenes/espana.png" style="width: 20px;">
+                                <div class="h6 m-0 ps-1">Español</div>
+                            </div>
+                            <div class="h6 m-0 mt-1">Nativo</div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex align-items-center mt-1">
+                                <img src="./Imágenes/reino-unido.png" style="width: 20px;">
+                                <div class="h6 m-0 ps-1">Inglés</div>
+                            </div>
+                            <div class="h6 m-0 mt-1">C1</div>
+                        </div>
+                        <div class="fw-bold mt-2">Tipo de proyecto</div>
+                        <div class="d-flex justify-content-between mt-1">
+                            <div class="h6 m-0">Mínimo:</div>
+                            <div class="h6 m-0">40 horas</div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-1">
+                            <div class="h6 m-0">Máximo:</div>
+                            <div class="h6 m-0">800 horas</div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-1">
+                            <div class="h6 m-0">Teletrabajo:</div>
+                            <div class="h6 m-0">Siempre</div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-1">
+                            <div class="h6 m-0">Presencial:</div>
+                            <div class="h6 m-0">Nunca</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="informacionFreelancer mt-5">
+                    <div class="tituloInformacionFreelancer">REDES SOCIALES</div>
+                    <div class="cuerpoInformacionFreelancer">
+                        <div class="d-flex align-items-center mt-1">
+                            <img src="./Imágenes/gorjeo.png" style="width: 20px;">
+                            <a href="#" class="h6 m-0 ps-1">Twitter</a>
+                        </div>
+                        <div class="d-flex align-items-center mt-1">
+                            <img src="./Imágenes/facebook.png" style="width: 20px;">
+                            <a href="#" class="h6 m-0 ps-1">Facebook</a>
+                        </div>
+                        <div class="d-flex align-items-center mt-1">
+                            <img src="./Imágenes/correo.png" style="width: 20px;">
+                            <a href="#" class="h6 m-0 ps-1">Correo electrónico</a>
+                        </div>
+                        <div class="d-flex align-items-center mt-1">
+                            <img src="./Imágenes/linkedin.png" style="width: 20px;">
+                            <a href="#" class="h6 m-0 ps-1">Linkedin</a>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </div>
     </main>
+
+
 </body>
 </html>
