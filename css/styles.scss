@@ -2,16 +2,28 @@
 
 // VARIABLES DE BOOTSTRAP
 
+* {
+    font-family: $font-family;
+}
+
+.h1 {
+    font-family: "Merriweather";
+}
+
 .h7 {
     font-size: $h7;
 }
 
-.h8 {
+.fs-7 {
+    font-size: $h7;
+}
+
+.fs-8 {
     font-size: $h8;
 }
 
-* {
-    font-family: $font-family;
+.h8 {
+    font-size: $h8;
 }
 
 .informacionFreelancer {
@@ -28,8 +40,17 @@
         border: 1px solid black;
         border-radius: 15px;
         padding: 10px;
-        font-size: 20px;
+        font-size: 16px;
     }
+}
+
+.card:hover {
+    transition: 0.2s;
+    box-shadow: 5px 5px rgb(225, 223, 223);
+}
+
+.breadcrumb-item a {
+    color: $breadcrumb-noactive-color;
 }
 
 // HEADER
