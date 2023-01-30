@@ -1,0 +1,27 @@
+CAMBIOS REALIZADOS EN EL PROYECTO DE BOOTSTRAP RESPECTO AL ADOBEXD
+
+1. HEADER
+Fue simplificado quedando solo el logo de Prograo y un botón que hace tanto la función de registro como de iniciar sesión.
+Esto se hizo así ya que de todos los enlaces el único con sentido era el de freelancers, pero sabiendo que durante toda la web se puede acceder fácilmente
+al listado, no ví necesario mantenerlo.
+Los botones de registro y login fueron fusionados porque, no solo queda mejor el nuevo modal sino que, además, se evita crear una página nueva.
+Los colores de los botones fueron cambiados para que fueran similares al del color primario.
+
+1. INDEX
+La página entera fue rehecha porque nunca me llegó a convencer cómo quedó cuando la entregué como proyecto de AdobeXD.
+La nueva página no solo es más profesional, sino que además es más clara y dispone del apartado de "búsqueda rápida", la cual fue rebautizada a 
+proyectos predefinidos, evitando así, de nuevo, tener que crear otro HTML para un apartado que no es tal importante.
+De hecho, en el apartado último recalcar que, aunque solo he puesto 4 opciones, la idea es que haya muchos más, justificando así
+la paginación de abajo.
+
+2. LISTADO
+Se puede recalcar que ahora en cada fila se muestran dos freelancers en vez de uno. Esto es debido a que es más cómodo para el usuario,
+ya que ahora no se precisa de desplazar la página tanto, sino que además queda mejor las "card", esto es porque si solo se muestra
+un freelancer por fila, la "card" tendría muchos huecos vacíos, no quedando así muy profesional.
+Comentar que la separación entre freelancers no queda bien en el eje vertical debido a que hay pocos.
+
+3. INFORMACIÓN
+Se cambió el apartado de "habilidades" ya que el sistema de rayas no era muy claro, y podía llegar a confundir.
+También se añadió más información en el apartado de "preferencias", antes llamado "tipo de proyecto".
+Por último, añadí una imagen a la última crítica del apartado de "calificaciones" para mostrar que, efectivamente,
+dispone de soporte de imágenes.
