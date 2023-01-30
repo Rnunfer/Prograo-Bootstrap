@@ -18,8 +18,7 @@
             </a>
 
            <div class="col d-flex d-flex-row justify-content-end p-0">
-                <input class="btn btn-primary me-3" type="button" value="Registrarse">
-                <input class="btn btn-primary" type="button" value="Iniciar Sesión">
+                <input class="btn btn-primary" type="button" value="Identificarse" data-bs-toggle="modal" data-bs-target="#modalMenuMovil">
            </div>
         </section>
     </header>
@@ -65,31 +64,64 @@
     <div class="modal right fade" id="modalMenuMovil">
         <div class="modal-dialog modal-side modal-top-right">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Iniciar Sesión</h5>
+                <div class="modal-header border pb-0">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Iniciar sesión</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Registrarse</button>
+                        </li>
+                    </ul>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="form-outline mb-4">
-                        <input type="email" id="typeEmailX-2" class="form-control form-control-lg" placeholder="Email"/>
-                    </div>
+                    
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active p-3" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                        <div class="form-outline mb-3">
+                            <input type="email" id="typeEmailX-2" class="form-control form-control-lg" placeholder="Email"/>
+                        </div>
+            
+                        <div class="form-outline mb-3">
+                            <input type="password" id="typePasswordX-2" class="form-control form-control-lg" placeholder="Contraseña"/>
+                        </div>
+    
+                        <div class="form-check d-flex justify-content-start mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
+                            <label class="form-check-label fs-7 ps-2" for="form1Example3"> Recordar contraseña</label>
+                        </div>
         
-                    <div class="form-outline mb-4">
-                        <input type="password" id="typePasswordX-2" class="form-control form-control-lg" placeholder="Contraseña"/>
+                        <button class="btn btn-primary btn-lg btn-block col-12 m-0 mb-2" type="submit">Identificarse</button>
+        
+                        <hr class="my-4">
+        
+                        <button class="col-12 btn btn-lg btn-block btn-primary mb-2 border-0" style="background-color: #dd4b39;" type="submit"><i class="fab fa-google me-2"></i> Login con google</button>
+                        <button class="col-12 btn btn-lg btn-block btn-primary mb-2 border-0" style="background-color: #3b5998;" type="submit"><i class="fab fa-facebook-f me-2"></i>Login con facebook</button>
                     </div>
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                        <div class="tab-pane fade show active p-3" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                            <div class="form-outline mb-3">
+                                <input type="email" id="typeEmailX-2" class="form-control form-control-lg" placeholder="Email"/>
+                            </div>
+                
+                            <div class="form-outline mb-3">
+                                <input type="password" id="typePasswordX-2" class="form-control form-control-lg" placeholder="Contraseña"/>
+                            </div>
 
-                    <div class="form-check d-flex justify-content-start mb-4">
-                        <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
-                        <label class="form-check-label ps-2" for="form1Example3"> Recordar contraseña</label>
+                            <div class="form-outline mb-3">
+                                <input type="password" id="typePasswordX-2" class="form-control form-control-lg" placeholder="Repetir contraseña"/>
+                            </div>
+            
+                            <button class="btn btn-primary btn-lg btn-block col-12 m-0" type="submit">Crear Usuario</button>
+            
+                            <hr class="my-4">
+            
+                            <button class="col-12 btn btn-lg btn-block btn-primary mb-2 border-0" style="background-color: #dd4b39;" type="submit"><i class="fab fa-google me-2"></i> Login con google</button>
+                            <button class="col-12 btn btn-lg btn-block btn-primary mb-2 border-0" style="background-color: #3b5998;" type="submit"><i class="fab fa-facebook-f me-2"></i>Login con facebook</button>
+                        </div>
                     </div>
-    
-                    <button class="btn btn-primary btn-lg btn-block col-12 m-0 mb-2" type="submit">Identificarse</button>
-                    <button class="btn btn-primary btn-lg btn-block col-12 m-0" type="submit">Crear Usuario</button>
-    
-                    <hr class="my-4">
-    
-                    <button class="col-12 btn btn-lg btn-block btn-primary mb-2 border-0" style="background-color: #dd4b39;" type="submit"><i class="fab fa-google me-2"></i> Login con google</button>
-                    <button class="col-12 btn btn-lg btn-block btn-primary mb-2 border-0" style="background-color: #3b5998;" type="submit"><i class="fab fa-facebook-f me-2"></i>Login con facebook</button>
+                  </div>
                 </div>
             </div>
         </div>
